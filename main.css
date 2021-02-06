@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 830px;
+  min-width: 1020px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+a {
+  color: #3fafe9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  height: 68%;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+nav {
+  position: relative;
+    top: 80px;
+    margin: auto;
+    width: 980px;
+    border: 1px solid #808080;
+    border-radius: 7px;
+    background-image: linear-gradient(#7b7b7b 0 50%, #5f5f5f 52% 67%, #757575);
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  font-size: 13px;
+    padding: 0;
+}
+
+nav > * {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  padding: 2px 0;
+  border-right: 2px solid rgb(141, 141, 141);
+}
+
+nav > :last-child {
+  border-right: none;
+}
+
+nav a {
+  color: white;
+  line-height: 28px;
+}
+
+nav a:hover {
+  background-color: #3131319e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fa-apple {
+  font-size: 24px;
+  opacity: 0.8px;
+
+}
+
+nav input[type="search" i] {
+  background-color: #0000;
+    height: 22px;
+    margin: 4px 11px;
+    padding: 2px 18px 1px 22px;
+    border-radius: 12px;
+    width: 108px;
+    transition: 0.3s;
+}
+
+nav input[type="search" i]:focus {
+  width: 200px;
+  background: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+nav form {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  font-size: 12px;
+  top: 11px;
+    left: 19px;
+    color: #fff;
+}
+
+nav input[type="search" i]:focus + .fa-search{
+  color: gray;
+}
+
+#promos {
+  height: 22%;
+  display: flex;
+}
+
+#promos img {
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+#promos :last-child {
+  margin-right: 0;
+}
+
+footer {
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 10px;
+  line-height: 1.2;
+  color: #9a9a9a;
+}
+
+.footer-left {
+  width: 50%;
+  float: left;
+}
+
+.footer-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+  position: relative;
+}
+
+#flag-icon {
+  width: 17px;
+  position: absolute;
+  top: 7px;
+  margin-left: 5px;
+}
